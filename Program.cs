@@ -1,11 +1,22 @@
 ﻿using EXEMPLOEXPLORANDO.Models;
 
-Pessoa p1 = new Pessoa();
+Pessoa p1 = new Pessoa(nome:"Diogo", sobrenome:"Sousa");
+Pessoa p2 = new Pessoa(nome:"Jorge", sobrenome:"Santos");
 
-//subindo para o git
 
-p1.Nome = "Diogo";
-p1.Sobrenome = "Sousa";
-p1.Idade = 33;
-p1.Apresentar();
+Curso cursoDeIngles = new Curso();
+cursoDeIngles.Nome = "Ingles";
+cursoDeIngles.Alunos = new List<Pessoa>();
+
+cursoDeIngles.AdicionarAluno(p1);
+cursoDeIngles.AdicionarAluno(p2);
+cursoDeIngles.ListarAlunos();
+
+
+
+
+// p1.Nome = "Diogo";
+// p1.Sobrenome = "Sousa";
+// p1.Idade = 33;
+// p1.Apresentar();
 
