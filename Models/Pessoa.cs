@@ -24,6 +24,10 @@ namespace EXEMPLOEXPLORANDO.Models
             }
 
         }
+
+        public string Sobrenome { get; set; }
+        public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
+
         public int Idade
         {
             get => _idade;
@@ -39,7 +43,7 @@ namespace EXEMPLOEXPLORANDO.Models
 
         public void Apresentar()
         {
-            Console.WriteLine($"Olá, meu nome é {Nome} e tenho {Idade} anos");
+            Console.WriteLine($"{NomeCompleto} e tenho {Idade} anos");
         }
     }
 }
