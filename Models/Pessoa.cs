@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ExceptionServices;
 using System.Threading.Tasks;
 
 namespace EXEMPLOEXPLORANDO.Models
@@ -8,6 +9,7 @@ namespace EXEMPLOEXPLORANDO.Models
     public class Pessoa
     {
         private string _nome;
+        private int _idade;
         public string Nome
         {
             get => _nome.ToUpper();
@@ -22,7 +24,18 @@ namespace EXEMPLOEXPLORANDO.Models
             }
 
         }
-        public int Idade { get; set; }
+        public int Idade
+        {
+            get => _idade;
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("O valor nao pode ser menor do que zero");
+                }
+                _idade = value;
+            }
+        }
 
         public void Apresentar()
         {
