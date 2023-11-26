@@ -1,0 +1,15 @@
+E:\Desenvolvimento\dotnet\EXEMPLOEXPLORANDO\bin\Debug\net8.0\EXEMPLOEXPLORANDO.exe
+E:\Desenvolvimento\dotnet\EXEMPLOEXPLORANDO\bin\Debug\net8.0\EXEMPLOEXPLORANDO.deps.json
+E:\Desenvolvimento\dotnet\EXEMPLOEXPLORANDO\bin\Debug\net8.0\EXEMPLOEXPLORANDO.runtimeconfig.json
+E:\Desenvolvimento\dotnet\EXEMPLOEXPLORANDO\bin\Debug\net8.0\EXEMPLOEXPLORANDO.dll
+E:\Desenvolvimento\dotnet\EXEMPLOEXPLORANDO\bin\Debug\net8.0\EXEMPLOEXPLORANDO.pdb
+E:\Desenvolvimento\dotnet\EXEMPLOEXPLORANDO\obj\Debug\net8.0\EXEMPLOEXPLORANDO.GeneratedMSBuildEditorConfig.editorconfig
+E:\Desenvolvimento\dotnet\EXEMPLOEXPLORANDO\obj\Debug\net8.0\EXEMPLOEXPLORANDO.AssemblyInfoInputs.cache
+E:\Desenvolvimento\dotnet\EXEMPLOEXPLORANDO\obj\Debug\net8.0\EXEMPLOEXPLORANDO.AssemblyInfo.cs
+E:\Desenvolvimento\dotnet\EXEMPLOEXPLORANDO\obj\Debug\net8.0\EXEMPLOEXPLORANDO.csproj.CoreCompileInputs.cache
+E:\Desenvolvimento\dotnet\EXEMPLOEXPLORANDO\obj\Debug\net8.0\EXEMPLOEXPLORANDO.dll
+E:\Desenvolvimento\dotnet\EXEMPLOEXPLORANDO\obj\Debug\net8.0\refint\EXEMPLOEXPLORANDO.dll
+E:\Desenvolvimento\dotnet\EXEMPLOEXPLORANDO\obj\Debug\net8.0\EXEMPLOEXPLORANDO.pdb
+E:\Desenvolvimento\dotnet\EXEMPLOEXPLORANDO\obj\Debug\net8.0\EXEMPLOEXPLORANDO.genruntimeconfig.cache
+E:\Desenvolvimento\dotnet\EXEMPLOEXPLORANDO\obj\Debug\net8.0\ref\EXEMPLOEXPLORANDO.dll
+E:\Desenvolvimento\dotnet\EXEMPLOEXPLORANDO\obj\Debug\net8.0\EXEMPLOEXPLORANDO.sourcelink.json
