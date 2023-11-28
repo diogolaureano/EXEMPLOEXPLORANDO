@@ -2,22 +2,33 @@
 using System.Data;
 using System.Globalization; //Alterando a localização do sistema
 
-//Utilizando conversão de data com tratamento de exceção TryParse
-string dataString = "2022-10-22 18:00";
 
-bool sucesso = DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm",
-                      CultureInfo.InvariantCulture,
-                      DateTimeStyles.None, out DateTime data);
-if (sucesso)
+//Realizando a leitura de um arquivo texto.
+string[] strings = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+
+foreach (string string1 in strings)
 {
-Console.WriteLine($"Conversão realizada com sucesso, Data: {data}");
-}
-else
-{
-Console.WriteLine($"{dataString} não é uma data válida");
+    Console.WriteLine(string1);
 }
 
-Console.WriteLine(data);
+
+
+
+
+// //Utilizando conversão de data com tratamento de exceção TryParse
+// string dataString = "2022-10-22 18:00";
+// variavel, formato da data   , conversão local             , estilo da data     , saida.
+// bool sucesso = DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data);
+// if (sucesso)
+// {
+// Console.WriteLine($"Conversão realizada com sucesso, Data: {data}");
+// }
+// else
+// {
+// Console.WriteLine($"{dataString} não é uma data válida");
+// }
+
+// Console.WriteLine(data);
 
 
 // //Trabalhando com DataTime
