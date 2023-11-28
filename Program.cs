@@ -1,4 +1,7 @@
 ﻿using EXEMPLOEXPLORANDO.Models;
+using System.Globalization; //Alterando a localização do sistema
+
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
 
 decimal valor = 11158.23M;
 
