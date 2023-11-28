@@ -16,6 +16,14 @@ Console.WriteLine(valor.ToString("C", CultureInfo.CreateSpecificCulture("pt-BR")
 Console.WriteLine(valor.ToString("C2")); //C2 moeda, localização corrente + casas decimais
 Console.WriteLine(valor.ToString("N2")); //N2 numero + casas decimais
 
+double porcetagem = .1425;
+//formatando com porcentagem
+Console.WriteLine(porcetagem.ToString("P"));
+
+int numeros = 123456;
+//formatação personalizada
+Console.WriteLine(numeros.ToString("##-##-##"));
+
 // Pessoa p1 = new Pessoa(nome:"Diogo", sobrenome:"Sousa");
 // Pessoa p2 = new Pessoa(nome:"Jorge", sobrenome:"Santos");
 
