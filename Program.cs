@@ -9,6 +9,9 @@ decimal valor = 11158.23M;
 Console.WriteLine($"{valor:C}");
 
 
+//Outra forma de formatar a localização
+Console.WriteLine(valor.ToString("C", CultureInfo.CreateSpecificCulture("pt-BR")));
+
 // Pessoa p1 = new Pessoa(nome:"Diogo", sobrenome:"Sousa");
 // Pessoa p2 = new Pessoa(nome:"Jorge", sobrenome:"Santos");
 
