@@ -12,6 +12,10 @@ Console.WriteLine($"{valor:C}");
 //Outra forma de formatar a localização
 Console.WriteLine(valor.ToString("C", CultureInfo.CreateSpecificCulture("pt-BR")));
 
+
+Console.WriteLine(valor.ToString("C2")); //C2 moeda, localização corrente + casas decimais
+Console.WriteLine(valor.ToString("N2")); //N2 numero + casas decimais
+
 // Pessoa p1 = new Pessoa(nome:"Diogo", sobrenome:"Sousa");
 // Pessoa p2 = new Pessoa(nome:"Jorge", sobrenome:"Santos");
 
