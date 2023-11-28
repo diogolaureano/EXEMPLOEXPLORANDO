@@ -2,15 +2,30 @@
 using System.Data;
 using System.Globalization; //Alterando a localização do sistema
 
+//Utilizando conversão de data com tratamento de exceção TryParse
+string dataString = "2022-10-22 18:00";
 
-//Trabalhando com DataTime
-DateTime data = DateTime.Now;
+DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", 
+                      CultureInfo.InvariantCulture,
+                      DateTimeStyles.None, out DateTime data);
 
-//Data e hora completa
 Console.WriteLine(data);
 
-//Data formatada
-Console.WriteLine(data.ToString("dd/MM/yy HH:mm"));
+
+// //Trabalhando com DataTime
+// DateTime data = DateTime.Now;
+
+// //Data e hora completa
+// Console.WriteLine(data);
+
+// //Data formatada
+// Console.WriteLine(data.ToString("dd/MM/yy HH:mm"));
+
+// //Formatar para pegar apenas a data
+// Console.WriteLine(data.ToShortDateString());
+
+// //Formatar para pegar apenas a hora
+// Console.WriteLine(data.ToShortTimeString());
 
 
 
