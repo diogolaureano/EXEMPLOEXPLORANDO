@@ -1,28 +1,41 @@
 ﻿using EXEMPLOEXPLORANDO.Models;
+using System.Data;
 using System.Globalization; //Alterando a localização do sistema
 
-CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
 
-decimal valor = 11158.23M;
+//Trabalhando com DataTime
+DateTime data = DateTime.Now;
 
-//A letra ":C" pega a moeda corrente e faz a conversao monetaria.
-Console.WriteLine($"{valor:C}");
+//Data e hora completa
+Console.WriteLine(data);
+
+//Data formatada
+Console.WriteLine(data.ToString("dd/MM/yy HH:mm"));
 
 
-//Outra forma de formatar a localização
-Console.WriteLine(valor.ToString("C", CultureInfo.CreateSpecificCulture("pt-BR")));
+
+// CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
+
+// decimal valor = 11158.23M;
+
+// //A letra ":C" pega a moeda corrente e faz a conversao monetaria.
+// Console.WriteLine($"{valor:C}");
 
 
-Console.WriteLine(valor.ToString("C2")); //C2 moeda, localização corrente + casas decimais
-Console.WriteLine(valor.ToString("N2")); //N2 numero + casas decimais
+// //Outra forma de formatar a localização
+// Console.WriteLine(valor.ToString("C", CultureInfo.CreateSpecificCulture("pt-BR")));
 
-double porcetagem = .1425;
-//formatando com porcentagem
-Console.WriteLine(porcetagem.ToString("P"));
 
-int numeros = 123456;
-//formatação personalizada
-Console.WriteLine(numeros.ToString("##-##-##"));
+// Console.WriteLine(valor.ToString("C2")); //C2 moeda, localização corrente + casas decimais
+// Console.WriteLine(valor.ToString("N2")); //N2 numero + casas decimais
+
+// double porcetagem = .1425;
+// //formatando com porcentagem
+// Console.WriteLine(porcetagem.ToString("P"));
+
+// int numeros = 123456;
+// //formatação personalizada
+// Console.WriteLine(numeros.ToString("##-##-##"));
 
 // Pessoa p1 = new Pessoa(nome:"Diogo", sobrenome:"Sousa");
 // Pessoa p2 = new Pessoa(nome:"Jorge", sobrenome:"Santos");
