@@ -3,37 +3,68 @@ using System.Data;
 using System.Globalization; //Alterando a localização do sistema
 
 
-//Tratativa de erro com Try Catch
-try
-{
-    //Realizando a leitura de um arquivo texto.
-    string[] strings = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+//Criando uma fila
+Queue<int> fila = new Queue<int>();
 
-    foreach (string string1 in strings)
-    {
-        Console.WriteLine(string1);
-    }
+//Adiciona na fila
+fila.Enqueue(2);
+fila.Enqueue(4);
+fila.Enqueue(6);
+fila.Enqueue(8);
 
-}
-catch (FileNotFoundException ex)
+foreach (int item in fila)
 {
-    Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Arquivo não encontrado. {ex.Message}");
+    Console.WriteLine(item);
+}
 
-}
-catch (DirectoryNotFoundException ex)
-{
-    Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Caminho da pasta não encontrado. {ex.Message}");
+//Remove da fila
+Console.WriteLine($"Removendo da fila {fila.Dequeue()}");
+fila.Enqueue(10);
 
-}
-catch (Exception ex)
+foreach (int item in fila)
 {
-    Console.WriteLine($"Ocorreu uma exceção generica {ex.Message}");
+    Console.WriteLine(item);
+}
 
-}
-finally 
-{
-    Console.WriteLine("Chegou até aqui");
-}
+
+
+
+
+
+
+
+
+// //Tratativa de erro com Try Catch
+// try
+// {
+//     //Realizando a leitura de um arquivo texto.
+//     string[] strings = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+
+//     foreach (string string1 in strings)
+//     {
+//         Console.WriteLine(string1);
+//     }
+
+// }
+// catch (FileNotFoundException ex)
+// {
+//     Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Arquivo não encontrado. {ex.Message}");
+
+// }
+// catch (DirectoryNotFoundException ex)
+// {
+//     Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Caminho da pasta não encontrado. {ex.Message}");
+
+// }
+// catch (Exception ex)
+// {
+//     Console.WriteLine($"Ocorreu uma exceção generica {ex.Message}");
+
+// }
+// finally 
+// {
+//     Console.WriteLine("Chegou até aqui");
+// }
 
 
 
