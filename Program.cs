@@ -33,7 +33,6 @@ catch (Exception ex)
 finally 
 {
     Console.WriteLine("Chegou até aqui");
-
 }
 
 
