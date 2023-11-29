@@ -2,32 +2,77 @@
 using System.Data;
 using System.Globalization; //Alterando a localização do sistema
 
+//Criando um dicionario
+Dictionary<string, string> estados = new Dictionary<string, string>();
 
-Stack<int> pilha = new Stack<int>();
+//Adicionando itens no dicionario
+estados.Add("SP", "Sao Paulo");
+estados.Add("RJ", "Rio de Janeiro");
+estados.Add("MG", "Minas Gerais");
 
-
-//Adicionando na pilha
-pilha.Push(4);
-pilha.Push(6);
-pilha.Push(8);
-pilha.Push(10);
-
-
-foreach (int item in pilha)
+//Pode ser declarada de duas formas
+//foreach(KeyValuePair<string, string> item in estados){
+foreach (var item in estados)
 {
-    Console.WriteLine(item);
+    Console.WriteLine($"Chave item {item.Key} e valor do item {item.Value}");
 }
 
 
-//Removendo da pilha
-Console.WriteLine($"Removendo o elemento do topo {pilha.Pop()}");
+//Removendo um item do dicionario pela chave
+estados.Remove("SP");
 
-pilha.Push(20);
+//Alterando o valor de um item do dicionario, a chave nao pode ser alterada.
+estados["RJ"] = "Rio de Janeiro - Copacabana";
 
-foreach (int item in pilha)
+
+//Verificando se a chave ja existe no dicionario
+string chave = "MG";
+Console.WriteLine($"Verificando a chave: {chave}");
+
+if (estados.ContainsKey(chave))
 {
-    Console.WriteLine(item);
+    Console.WriteLine($"Valor existente: {chave}");
 }
+else
+{
+ Console.WriteLine($"Valor não existe. É seguro adicionar a chave {chave}");
+}
+
+//Imprimindo um valor pela chave
+Console.WriteLine(estados["MG"]);
+
+
+
+
+
+
+
+//Criando variavel para pilha
+// Stack<int> pilha = new Stack<int>();
+
+
+// //Adicionando na pilha
+// pilha.Push(4);
+// pilha.Push(6);
+// pilha.Push(8);
+// pilha.Push(10);
+
+
+// foreach (int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
+
+
+// //Removendo da pilha
+// Console.WriteLine($"Removendo o elemento do topo {pilha.Pop()}");
+
+// pilha.Push(20);
+
+// foreach (int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
 
 
 
