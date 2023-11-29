@@ -3,15 +3,23 @@ using System.Data;
 using System.Globalization; //Alterando a localização do sistema
 
 
-//Realizando a leitura de um arquivo texto.
-string[] strings = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
-
-foreach (string string1 in strings)
+//Tratativa de erro com Try Catch
+try
 {
-    Console.WriteLine(string1);
+    //Realizando a leitura de um arquivo texto.
+    string[] strings = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+
+    foreach (string string1 in strings)
+    {
+        Console.WriteLine(string1);
+    }
+
 }
+catch (Exception ex)
+{
+    Console.WriteLine($"Ocorreu uma exceção generica {ex.Message}");
 
-
+}
 
 
 
